@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Loans</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    line-height:1.6;
+    background:#f8f9fa;
+}
+
+header{
+    background:#0d47a1;
+    color:white;
+    padding:20px;
+    position:sticky;
+    top:0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+nav a:hover,
+nav a:focus{
+    background:#25D366;
+}
+
+.nav-button{
+    display:inline-block;
+    padding:8px 12px;
+    border-radius:5px;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.section{
+    padding:60px 20px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#0d47a1;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    width:280px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#0d47a1;
+}
+
+.rate{
+    font-size:28px;
+    font-weight:bold;
+    color:#28a745;
+    margin-top:10px;
+}
+
+.apply-form{
+    max-width:500px;
+    margin:auto;
+}
+
+.apply-form input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+
+.apply-form textarea{
+    width:100%;
+    min-height:110px;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    resize:vertical;
+    font:inherit;
+}
+
+.apply-form label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+.apply-form .optional-label{
+    font-weight:normal;
+}
+
+.apply-form button{
+    width:100%;
+    padding:14px;
+    background:#0d47a1;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.notice{
+    background:#fff3cd;
+    border-left:5px solid #ffc107;
+    padding:15px;
+    margin-top:20px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+@media(max-width:768px){
+    header .container{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h2>STAR LOANS</h2>
+
+        <nav>
+            <a class="nav-button" href="#about">About</a>
+            <a class="nav-button" href="#rates">Packages</a>
+            <a class="nav-button" href="#apply">Apply</a>
+            <a class="nav-button" href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Fast & Reliable Loans</h1>
+
+    <p>
+        Collateral Based Loans From MWK 100,000 To MWK 1,000,000
+    </p>
+
+</section>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Star Loans</h2>
+
+        <p style="text-align:center;">
+            Star Loans provides quick collateral based loans for
+            individuals and businesses. We offer simple application
+            procedures, flexible repayment periods and fast processing.
+        </p>
+    </div>
+</section>
+
+<section id="rates" class="section">
+    <div class="container">
+
+        <h2>Loan Packages</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>2 Week Loan</h3>
+                <p class="rate">40%</p>
+                <p>Repayment period: 14 Days</p>
+            </div>
+
+            <div class="card">
+                <h3>4 Week Loan</h3>
+                <p class="rate">65%</p>
+                <p>Repayment period: 40 Days</p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="notice">
+            <strong>Loan Range:</strong> MWK 100,000 - MWK 1,000,000
+            <br>
+            <strong>Security Required:</strong> Collateral
+        </div>
+
+    </div>
+</section>
+
+<section id="apply" class="section">
+    <div class="container">
+
+        <h2>Apply For A Loan</h2>
+
+        <form id="loanForm" class="apply-form">
+
+            <input
+                type="text"
+                id="fullname"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Loan Amount (MWK)"
+                required>
+
+            <input
+                type="text"
+                id="nationalid"
+                placeholder="National ID Number"
+                required>
+
+            <label for="nationalidpicture">Upload a copy of your National ID</label>
+            <input
+                type="file"
+                id="nationalidpicture"
+                accept="image/*"
+                required>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required>
+
+            <textarea
+                id="collateral"
+                placeholder="Describe the collateral you are offering"
+                required></textarea>
+
+            <label for="collateralpicture" class="optional-label">
+                Upload a picture of the collateral (optional)
+            </label>
+            <input
+                type="file"
+                id="collateralpicture"
+                accept="image/*">
+
+            <button type="submit">
+                Submit Application
+            </button>
+
+        </form>
+
+        <div class="notice">
+            <strong>Required:</strong>
+            <ul>
+                <li>Full Name</li>
+                <li>National ID</li>
+                <li>National ID picture (image file)</li>
+                <li>Phone Number</li>
+                <li>Collateral description</li>
+            </ul>
+            <p>Please attach the selected National ID and collateral pictures in WhatsApp after the chat opens.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+
+        <h2>Contact Us</h2>
+
+        <p style="text-align:center;">
+            Need a loan? Contact us directly on WhatsApp.
+        </p>
+
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2026 Star Loans. All Rights Reserved.
+        Designed by Velvet Touch 2026
+    </p>
+</footer>
+
+<script>
+document.getElementById("loanForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let fullname =
+    document.getElementById("fullname").value;
+
+    let amount =
+    document.getElementById("amount").value;
+
+    let nationalid =
+    document.getElementById("nationalid").value;
+
+    let nationalidpicture =
+    document.getElementById("nationalidpicture").files[0];
+
+    let phone =
+    document.getElementById("phone").value;
+
+    let collateral =
+    document.getElementById("collateral").value;
+
+    let collateralpicture =
+    document.getElementById("collateralpicture").files[0];
+
+    let collateralPictureName = collateralpicture
+    ? `${collateralpicture.name} (please attach this image in WhatsApp)`
+    : "Not provided";
+
+    let message =
+`START LOANS APPLICATION
+
+Full Name: ${fullname}
+
+Loan Amount: MWK ${amount}
+
+National ID: ${nationalid}
+
+National ID Picture: ${nationalidpicture.name} (please attach this image in WhatsApp)
+
+Phone Number: ${phone}
+
+Collateral Description: ${collateral}
+
+Collateral Picture: ${collateralPictureName}
+
+I would like to apply for a loan.`;
+
+    let whatsappNumber = "265996269191";
+
+    let url =
+`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+});
+</script>
+
+</body>
+</html>
+
+
